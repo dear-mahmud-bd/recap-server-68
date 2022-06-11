@@ -105,7 +105,10 @@ run().catch(console.dir);
 
 
 app.get('/', (req, res) => {
-    res.send('Running Genious Server ...');
+    res.send(' Running Heroku Server ... ');
+})
+app.get('/ami', (req,res)=>{
+    res.send(" Hello there I'm here :) ");
 })
 app.listen(port, () => {
     console.log('Surver running in porn No', port);
